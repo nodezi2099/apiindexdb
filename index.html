@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AGENDA</title>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./index.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container mx-auto px-4 contact">
+       <form class="w-full max-w-sm">
+		  <div class="flex items-center border-b border-b-2 border-teal-500 py-2">
+			    <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Buscar Por Celular" aria-label="Full name" id="inputCelular">
+			    <button id="btn__show" class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="button">
+			      Agregar Contacto
+			    </button>
+			     <button id="btn__search"><img src="./assets/svg/icon-search.svg"/ width="55px" style="margin-left:5px"></button>
+		  </div>
+      </form>
+
+      <div id="contacts__list" class="contacts__list"></div>
+    </div>
+
+
+    <div id="form__contact--modal" class="max-w-sm rounded overflow-hidden shadow-lg  z-40 ml-0 mt-0  contact__form hide">
+       <form class="bg-white  rounded px-8 pt-6 pb-8 mb-4" id="form__contact" enctype="multipart/form-data">
+		    <div class="mb-4">
+		      <label class="block text-gray-700 text-sm font-bold mb-2" for="contacto">
+		        Contacto
+		      </label>
+		      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="contacto" type="text" placeholder="Contacto" name="contacto" required>
+		    </div>
+		    <div class="mb-6">
+		      <label class="block text-gray-700 text-sm font-bold mb-2" for="celular">
+		        Celular
+		      </label>
+		        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="celular" type="text" placeholder="Celular" name="celular" required>
+		    </div>
+		    <div class="flex items-center justify-between">
+		      <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+		        Agregar
+		      </button>
+		    </div>
+      </form>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
